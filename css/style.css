@@ -1,0 +1,61 @@
+:root {
+    --bg: #883955;
+    --text: #FF4D80;
+    --primary: #DF367C;
+    --accent: #FF3E41;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  .hero {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 2em;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .services {
+    padding: 2em;
+    text-align: center;
+    list-style-position: inside;
+  }
+  .projects,
+  .reviews {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .projects img {
+    margin: 1%;
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+  footer {
+    background: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Mobile first */
+  @media (min-width: 768px) {
+    .projects img {
+      width: 20%;
+    }
+  }
+  
